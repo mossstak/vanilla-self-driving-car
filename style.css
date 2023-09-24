@@ -1,10 +1,19 @@
-body{
+*{
     margin: 0;
     background: darkgray;
+    font-family: Arial, Helvetica, sans-serif;
     overflow: hidden;
+}
+
+.container{
+    
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+h1{
+    text-align: center;
 }
 
 #verticalButtons{
@@ -30,5 +39,6 @@ button:hover{
 
 #carCanvas{
     background: lightgray;
+    padding: 10px;
 }
 
