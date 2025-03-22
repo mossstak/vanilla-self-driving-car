@@ -6,9 +6,9 @@
 }
 
 .container{
-    
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    margin: 0 300px;
     align-items: center;
 }
 
@@ -22,15 +22,20 @@ h1{
 }
 
 button{
-    border: none;
-    border-radius: 5px;
-    padding: 5px, 5px, 7px, 5px;
-    margin: 2px;
+    border: 3px white solid;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 15px;
     cursor: pointer;
 }
 button:hover{
     background:blue;
     color: white;
+}
+
+select{
+    padding: 5px;
+    margin: 10px;
 }
 
 #networkCanvas{
@@ -39,6 +44,5 @@ button:hover{
 
 #carCanvas{
     background: lightgray;
-    padding: 10px;
+    padding: 1px;
 }
-

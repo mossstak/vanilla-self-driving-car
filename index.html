@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,10 +13,20 @@
     <h1>Self Driving Car</h1>
     <div class="container">
       <canvas id="carCanvas"></canvas>
-    
+
       <div id="verticalButtons">
         <button onclick="save()">Save</button>
         <button onclick="discard()">Discard</button>
+        <button id="refreshButton">Refresh</button>
+
+        <div>
+          <span>Select Cars</span>
+          <select name="carsCount" id="carsCount" onchange="carsCount(event)">
+            <option value="1">1</option>
+            <option value="10">10</option>
+            <option value="100">100</option>
+          </select>
+        </div>
       </div>
       <canvas id="networkCanvas"></canvas>
       <script src="visualizer.js"></script>
@@ -28,6 +38,5 @@
       <script src="car.js"></script>
       <script src="script.js"></script>
     </div>
-
   </body>
 </html>
